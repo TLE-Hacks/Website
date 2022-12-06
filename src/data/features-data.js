@@ -7,24 +7,26 @@ import {
 export const featuresData = [
   {
     color: "blue",
-    title: "Awarded Agency",
+    title: "Socialize and Network!",
     icon: StarIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "Meet new people interested in the tech industry!",
   },
+  // All high school students who are interested in learning more about the world of computer science.
+  // It's fully virtual so you can join from the comfort of your home!
   {
     color: "red",
-    title: "Free Revisions",
+    title: "Build something cool!",
     icon: ArrowPathIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Build a project with your team and showcase it others!",
   },
   {
     color: "teal",
-    title: "Verified Company",
+    title: "Learn new technologies!",
     icon: FingerPrintIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "Learn how to code and build software from our mentors",
   },
 ];
 

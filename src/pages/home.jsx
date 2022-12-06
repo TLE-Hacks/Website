@@ -12,7 +12,7 @@ import {
 import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { featuresData, teamData, sponsorData } from "@/data";
 
 export function Home() {
   return (
@@ -35,12 +35,10 @@ export function Home() {
                 <br />
                 Virtual
               </Typography>
-              <a
-                href={
-                  "https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link"
-                }
-              ></a>
-              <Button>Sign Up</Button>
+              <a target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link">
+                <Button>Get Started</Button>
+              </a>
             </div>
           </div>
         </div>
@@ -70,17 +68,13 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                36-Hour Hackathon
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popovers to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                TLE Hacks is a 36-hour virtual hackathon for high school students
                 <br />
                 <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                During the event, you will have the opportunity to learn new skills, meet new people, and build a project you'll be able to showcase.
               </Typography>
               <Button variant="outlined">read more</Button>
             </div>
@@ -114,27 +108,25 @@ export function Home() {
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
-          <PageTitle heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          <PageTitle heading="Our Team">
+            Dedicated students from Pierre Elliott Trudeau High School
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
-                key={name}
-                img={img}
-                name={name}
-                position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-lg fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
+              key={name}
+              img={img}
+              name={name}
+              position={position}
+              socials={
+                <div className="flex items-center gap-2">
+                  {socials.map(({ color, name }) => (
+                    <IconButton key={name} color={color} variant="text">
+                      <i className={`fa-brands text-lg fa-${name}`} />
+                    </IconButton>
+                  ))}
+                </div>
+              }
               />
             ))}
           </div>
@@ -142,13 +134,10 @@ export function Home() {
       </section>
       <section className="relative bg-blue-gray-50/50 py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
+          <PageTitle heading="Sponsors">
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {contactData.map(({ title, icon, description }) => (
+            {sponsorData.map(({ title, icon, description }) => (
               <Card
                 key={title}
                 color="transparent"
