@@ -5,12 +5,11 @@ import {
   CardHeader,
   Typography,
   Button,
-  IconButton,
   Input,
   Textarea,
 } from "@material-tailwind/react";
-import { UsersIcon } from "@heroicons/react/24/solid";
-import { PageTitle, Footer } from "@/widgets/layout";
+import { ClockIcon } from "@heroicons/react/24/solid";
+import { PageTitle, Footer, Carousel } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, sponsorData } from "@/data";
 
@@ -61,7 +60,7 @@ export function Home() {
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
-                <UsersIcon className="h-6 w-6 text-blue-gray-900" />
+                <ClockIcon className="h-6 w-6 text-blue-gray-900" />
               </div>
               <Typography
                 variant="h3"
@@ -71,12 +70,15 @@ export function Home() {
                 36-Hour Hackathon
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                TLE Hacks is a 36-hour virtual hackathon for high school students
+                TLE Hacks is a 36-hour virtual hackathon hosted by Pierre Elliott Trudeau High School.
                 <br />
                 <br />
                 During the event, you will have the opportunity to learn new skills, meet new people, and build a project you'll be able to showcase.
               </Typography>
-              <Button variant="outlined">read more</Button>
+              <a target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link">
+                <Button variant="outlined">Get Started</Button>
+              </a>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
@@ -93,12 +95,12 @@ export function Home() {
                     color="blue-gray"
                     className="mb-3 font-bold"
                   >
-                    Top Notch Services
+                    Requirements
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    Only <b>high school students</b> eligible.
+                    <br/>
+                    You can work alone or in a team with <b>upto 6</b> members.
                   </Typography>
                 </CardBody>
               </Card>
@@ -108,11 +110,54 @@ export function Home() {
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
+          <div className="mt-32 flex flex-wrap items-center">
+            <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+              <Card className="shadow-lg shadow-gray-500/10">
+                <CardHeader className="relative h-56">
+                  <img
+                    alt="Card Image"
+                    src="/img/teamwork.jpeg"
+                    className="h-full w-full"
+                  />
+                </CardHeader>
+                <CardBody>
+                  <Typography
+                    variant="h5"
+                    color="blue-gray"
+                    className="mb-3 font-bold"
+                  >
+                    What is SHSM?
+                  </Typography>
+                  <Typography className="font-normal text-blue-gray-500">
+                    <a target="_blank" href="https://shsmpeths.ca/join">
+                    <Button variant="outlined">Check out SHSM</Button></a>
+                  </Typography>
+                </CardBody>
+              </Card>
+            </div>
+            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+              <Typography
+                variant="h3"
+                className="mb-3 font-bold"
+                color="blue-gray"
+              >
+                From SHSM?
+              </Typography>
+              <Typography className="mb-8 font-normal text-blue-gray-500">
+                In order to earn a SHSM credit, you must either make a submission to the Hackathon or participate in at least one workshop.
+              </Typography>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-4 pt-20 pb-48 bg-gray-50">
+        <div className="container mx-auto">
           <PageTitle heading="Our Team">
             Dedicated students from Pierre Elliott Trudeau High School
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {teamData.map(({ img, name, position, socials }) => (
+          {/* <Carousel /> */}
+          <Carousel teamData={teamData} />
+            {/* {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
               key={name}
               img={img}
@@ -128,8 +173,7 @@ export function Home() {
                 </div>
               }
               />
-            ))}
-          </div>
+            ))} */}
         </div>
       </section>
       <section className="relative bg-blue-gray-50/50 py-24 px-4">
@@ -137,20 +181,21 @@ export function Home() {
           <PageTitle heading="Sponsors">
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {sponsorData.map(({ title, icon, description }) => (
+            {sponsorData.map(({ sponsor, logo, description }) => (
               <Card
-                key={title}
+                key={sponsor}
                 color="transparent"
                 shadow={false}
                 className="text-center text-blue-gray-900"
               >
                 <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
-                  {React.createElement(icon, {
+                  <img src={logo} />
+                  {/* {React.createElement(logo, {
                     className: "w-5 h-5",
-                  })}
+                  })} */}
                 </div>
                 <Typography variant="h5" color="blue-gray" className="mb-2">
-                  {title}
+                  {sponsor}
                 </Typography>
                 <Typography className="font-normal text-blue-gray-500">
                   {description}

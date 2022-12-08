@@ -78,91 +78,80 @@ export function Footer({ title, description, socials, menus, copyright }) {
   );
 }
 
+// move socials to navbar?
+// add a "contact us" w/ email
 Footer.defaultProps = {
   title: "TLE Hacks",
-  description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+  description: 
+    "",
   socials: [
     {
       color: "blue",
-      name: "facebook",
-      path: "https://www.facebook.com/CreativeTim",
+      name: "linkedin",
+      path: "https://www.linkedin.com/company/tle-hacks/",
     },
     {
-      color: "light-blue",
-      name: "twitter",
-      path: "https://www.twitter.com/creativetim",
+      color: "blue",
+      name: "discord",
+      path: "https://discord.gg/6Z2WY8Y",
     },
     {
       color: "purple",
       name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
-    },
-    {
-      color: "pink",
-      name: "dribbble",
-      path: "https://www.dribbble.com/creativetim",
-    },
-    {
-      color: "red",
-      name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      path: "https://www.instagram.com/tlehacks/",
     },
     {
       color: "black",
       name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
+      path: "https://github.com/TLE-Hacks/Website",
+    },
+    {
+      color: "blue",
+      name: "twitter",
+      path: "https://twitter.com/tlehacks",
     },
   ],
   menus: [
-    {
-      name: "useful links",
-      items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
-        {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
-        },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
-      ],
-    },
-    {
-      name: "other resources",
-      items: [
-        {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
-        },
-        {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
-        },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
-      ],
-    },
+    // {
+    //   name: "useful links",
+    //   items: [
+    //     { name: "About Us", path: "https://www.creative-tim.com/presentation" },
+    //     { name: "Blog", path: "https://www.creative-tim.com/blog" },
+    //     {
+    //       name: "Github",
+    //       path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
+    //     },
+    //     {
+    //       name: "Free Products",
+    //       path: "https://www.creative-tim.com/templates/free?ref=mtk",
+    //     },
+    //   ],
+    // },
+    // {
+    //   name: "other resources",
+    //   items: [
+    //     {
+    //       name: "MIT License",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Contribute",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Change Log",
+    //       path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+    //     },
+    //     {
+    //       name: "Contact Us",
+    //       path: "https://creative-tim.com/contact-us?ref=mtk",
+    //     },
+    //   ],
+    // },
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
-      <a
-        href="https://www.creative-tim.com?ref=mtk"
-        target="_blank"
-        className="text-blue-gray-500 transition-colors hover:text-blue-500"
-      >
-        Creative Tim
-      </a>
-      .
+      Copyright © {year} TLEHacks.
     </>
   ),
 };

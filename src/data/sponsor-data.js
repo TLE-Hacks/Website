@@ -1,25 +1,19 @@
-import {
-  StarIcon,
-  PresentationChartLineIcon,
-  RocketLaunchIcon,
-} from "@heroicons/react/24/solid";
-
 export const sponsorData = [
   {
-    title: "Sponsor A",
-    icon: StarIcon, // use logo instead
+    sponsor: "Sponsor A",
+    logo: "/img/team-1.jpg",
     description:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
   },
   {
-    title: "Sponsor B",
-    icon: PresentationChartLineIcon,
+    sponsor: "Sponsor B",
+    logo: "/img/team-2.jpg",
     description:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
   },
   {
-    title: "Sponsor C",
-    icon: RocketLaunchIcon,
+    sponsor: "Sponsor C",
+    logo: "/img/team-3.jpg",
     description:
       "Some quick example text to build on the card title and make up the bulk of the card's content.",
   }
