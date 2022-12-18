@@ -1,5 +1,5 @@
 import React from 'react';
-import {Btn} from '../Landing/index.jsx';
+import {Btn} from '../Landing';
 import './style.css';
 
 interface IJoinTeam {
@@ -23,7 +23,7 @@ const Member = ({info}: {info: any}) => {
   const {github, role, name, img, linkedin} = info;
   return (
     <div className="member">
-      <img src={img} alt="Limbo hack"></img>
+      <img src={img} alt="TLEHacks"></img>
       <div className="members-link">
         <h3>{name}</h3>
         <p>{role}</p>

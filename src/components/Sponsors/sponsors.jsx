@@ -1,5 +1,5 @@
 import {SOCIALS} from '../../Module/General';
-import {Btn} from '../Landing/index.jsx';
+import {Btn} from '../Landing';
 import './sponsors.scss';
 
 function SponsorsHead() {
@@ -9,7 +9,7 @@ function SponsorsHead() {
 function Sponsor(props) {
   return (
     <div className="Sponsor ">
-      <img src={props.srcx} alt="Limbo hacks"></img>
+      <img src={props.srcx} alt="TLE hacks"></img>
     </div>
   );
 }
