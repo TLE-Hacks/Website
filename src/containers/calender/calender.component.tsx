@@ -84,7 +84,7 @@ export const Calender = ({data}: any) => {
 
     return (
         <CalenderLayout
-            handleActionProcced={
+            handleActionProceed={
                 state.index === CALENDER_VIEW
                     ? {type: 'MONTH_FORWARD'}
                     : {type: 'DISABLED'}

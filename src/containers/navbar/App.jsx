@@ -70,7 +70,7 @@ const NAVBAR = ({}) => {
         return () => window.removeEventListener('scroll', listenScrollEvent);
     }, []);
 
-    const handleOutsideCick = (event, ref) => {
+    const handleOutsideClick = (event, ref) => {
         if (!ref.current.contains(event.target)) {
             setToggle(true);
         } else {
@@ -80,12 +80,12 @@ const NAVBAR = ({}) => {
 
     useEffect(() => {
         document.addEventListener('mousedown', e =>
-            handleOutsideCick(e, navigation)
+            handleOutsideClick(e, navigation)
         );
 
         return () => {
             document.removeEventListener('mousedown', e =>
-                handleOutsideCick(e, navigation)
+                handleOutsideClick(e, navigation)
             );
         };
     }, []);
@@ -125,6 +125,7 @@ const NAVBAR = ({}) => {
                                 className="s-close"
                                 onClick={() => setToggle(true)}
                                 src={logoClose}
+                                alt=""
                             />
                         </ul>
                     </div>
@@ -134,6 +135,7 @@ const NAVBAR = ({}) => {
                     className="s-open"
                     onClick={() => setToggle(false)}
                     src={hamLogo}
+                    alt=""
                 />
             </nav>
 

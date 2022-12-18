@@ -12,15 +12,9 @@
     background-size: auto 100vh;
 }
 
-.color_sectiom {
+.color_section {
     background-color: #121930;
     padding-bottom: 5rem;
-}
-
-.container-fluid {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h1 {
@@ -41,7 +35,7 @@ h1 {
     width: 100%;
     position: relative;
     transition: 0.3s;
-    top: 0px;
+    top: 0;
     transition: top 0.2s linear;
 }
 
@@ -58,14 +52,14 @@ h1 {
 }
 
 .members {
-    padding: 0vh 10vh 0 10vh;
+    padding: 0 10vh 0 10vh;
 }
 
 .prizesection {
     text-align: center;
     margin: 0 auto;
     padding: 0 4vh 0 4vh;
-    margin: 17vh 0vh 0 0vh;
+    margin: 17vh 0 0 0;
     border-radius: 14px;
     margin-top: 4vh;
     background-color: #f3effe;
@@ -78,14 +72,7 @@ h1 {
 .sponsorSection {
     padding: 17vh 18vh 0 18vh;
     margin-top: -10vh;
-    margin-top: 0vh;
-}
-
-.faqsSection {
-    text-align: center;
-    margin: 0 auto;
-    padding: 17vh 18vh 0 18vh;
-    margin-top: -16vh;
+    margin-top: 0;
 }
 
 @media (max-width: 570px) {
@@ -95,11 +82,6 @@ h1 {
 
     .Whole_div {
         background-size: auto 100vh;
-    }
-
-    .faqsSection {
-        padding: 0;
-        margin-top: 0vh;
     }
 
     .members {
@@ -120,6 +102,6 @@ h1 {
 
     .logoSection {
         text-align: center;
-        padding: 20vh 0vh 0 0vh;
+        padding: 20vh 0 0 0;
     }
 }

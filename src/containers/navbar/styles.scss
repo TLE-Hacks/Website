@@ -27,10 +27,6 @@
     display: none;
 }
 
-.nav-inner {
-    width: 30%;
-}
-
 ul {
     position: relative;
     display: flex;
@@ -65,7 +61,7 @@ nav ul li {
     }
     ul {
         flex-direction: column;
-        padding: 30px 20;
+        padding: 30px 20px;
     }
     .s-open {
         display: inline;

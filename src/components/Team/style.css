@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: 5rem;
     position: relative;
-    top: 0px;
+    top: 0;
     transition: top 0.2s linear;
 }
 
@@ -50,6 +50,6 @@
     }
 
     .joinT h3 {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }

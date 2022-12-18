@@ -20,7 +20,7 @@ export interface EventArrayType {
 }
 
 
-// This is Global state types (i.e store type for calender global store)
+// This is Global state types (i.e store type for calendar global store)
 export interface CalenderStateTypes {
     index: number;
     selectedData: EventType[];

@@ -82,7 +82,7 @@ export default function HomePage() {
 
     return (
         <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
-            <div className="color_sectiom" id="home">
+            <div className="color_section" id="home">
                 <Container fluid>
                     <Row className="Row info">
                         <Col className="info-div" sm={12} lg={7} md={7}>

@@ -11,13 +11,13 @@ interface actionTypes {
 }
 
 interface CalenderLayoutProps {
-    handleActionProcced?: actionTypes;
+    handleActionProceed?: actionTypes;
     handleActionBack?: actionTypes;
 }
 
 const CalenderLayout: React.FC<CalenderLayoutProps> = ({
                                                            children,
-                                                           handleActionProcced,
+                                                           handleActionProceed,
                                                            handleActionBack
                                                        }) => {
     const contextTesting = useContext(calenderContext);
@@ -43,7 +43,7 @@ const CalenderLayout: React.FC<CalenderLayoutProps> = ({
                         className={`card-top-inner-item ${
                             state.index !== CALENDER_VIEW && 'card-top-inner-item__disabled'
                         }`}
-                        onClick={() => dispatch(handleActionProcced)}
+                        onClick={() => dispatch(handleActionProceed)}
                     >
                         N
                     </Flexbox>

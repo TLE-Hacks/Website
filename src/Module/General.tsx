@@ -100,7 +100,7 @@ const schedule = [
         day: '8-11-2021',
         events: [
             {
-                title: 'Intro to phycycology',
+                title: 'Intro to psychology',
                 timings: '12 AM - 1 Pm',
                 link: 'https://google.com'
             }
@@ -125,7 +125,7 @@ const schedule = [
         day: '3-12-2021',
         events: [
             {
-                title: 'Intro to phycycology',
+                title: 'Intro to psychology',
                 timings: '12 AM - 1 Pm',
                 link: 'https://google.com'
             }
@@ -145,7 +145,7 @@ const schedule = [
         day: '1-1-2022',
         events: [
             {
-                title: 'Intro to phycycology',
+                title: 'Intro to psychology',
                 timings: '12 AM - 1 Pm',
                 link: 'https://google.com'
             }

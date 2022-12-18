@@ -38,7 +38,7 @@ const Myinfo = () => {
                     />
                 </a>
             </div>
-            <div className="buttom-group">
+            <div className="button-group">
                 <a href={TOP_SECTION.JUDGES_FORM_LINK}>
                     {' '}
                     <Btn class="sponsor_btn" type="Judges" overlay="Fill the form"/>
