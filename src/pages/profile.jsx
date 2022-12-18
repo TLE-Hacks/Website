@@ -7,7 +7,7 @@ export function Profile() {
         <>
             <section className="relative block h-[50vh]">
                 <div
-                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center" />
+                    className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-1.webp')] bg-cover bg-center" />
                 <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
             </section>
             <section className="relative bg-blue-gray-50/50 py-16 px-4">
@@ -20,7 +20,7 @@ export function Profile() {
                                     <div className="relative">
                                         <div className="-mt-20 w-40">
                                             <Avatar
-                                                src="/img/team-2.jpg"
+                                                src="/img/team-2.webp"
                                                 alt="Profile picture"
                                                 variant="circular"
                                                 className="h-full w-full shadow-xl"
@@ -30,7 +30,7 @@ export function Profile() {
                                 </div>
                                 <div
                                     className="mt-10 flex w-full justify-center px-4 lg:order-3 lg:mt-0 lg:w-4/12 lg:justify-end lg:self-center">
-                                    <Button className="bg-blue-400">Conntect</Button>
+                                    <Button className="bg-blue-400">Connect</Button>
                                 </div>
                                 <div className="w-full px-4 lg:order-1 lg:w-4/12">
                                     <div className="flex justify-center py-4 pt-8 lg:pt-4">

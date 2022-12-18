@@ -1,6 +1,6 @@
 export const teamData = [
     {
-        img: "/img/team-1.jpg",
+        img: "/img/team-1.webp",
         name: "Peterson Guo",
         position: "Director",
         socials: [
@@ -19,7 +19,7 @@ export const teamData = [
         ]
     },
     {
-        img: "/img/team-2.jpg",
+        img: "/img/team-2.webp",
         name: "Jake Zhang",
         position: "Co-Director",
         socials: [
@@ -38,7 +38,7 @@ export const teamData = [
         ]
     },
     {
-        img: "/img/team-3.jpg",
+        img: "/img/team-3.webp",
         name: "Victoria Do",
         position: "Co-Director",
         socials: [
@@ -57,7 +57,7 @@ export const teamData = [
         ]
     },
     {
-        img: "/img/team-4.png",
+        img: "/img/team-4.webp",
         name: "Enoch Chan",
         position: "Marketing Lead",
         socials: [
