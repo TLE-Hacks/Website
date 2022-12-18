@@ -80,7 +80,7 @@ export function Home() {
                                 <CardHeader className="relative h-56">
                                     <img
                                         alt="Card Image"
-                                        src="/img/teamwork.jpeg"
+                                        src="/img/teamwork.webp"
                                         className="h-full w-full"
                                     />
                                 </CardHeader>
@@ -111,7 +111,7 @@ export function Home() {
                                 <CardHeader className="relative h-56">
                                     <img
                                         alt="Card Image"
-                                        src="/img/teamwork.jpeg"
+                                        src="/img/teamwork.webp"
                                         className="h-full w-full"
                                     />
                                 </CardHeader>
