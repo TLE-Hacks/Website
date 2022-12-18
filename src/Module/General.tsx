@@ -59,8 +59,10 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: 'What is TLE Hacks?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 36 hour long running hackathon will be held on November 20th & 21th , We calls for hackers,' +
-      ' artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
+    'TLE Hacks is 36 hour long running hackathon will be held on November 20th & 21th , We calls for hackers,' +
+      ' artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part' +
+      ' to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at TLE Hacks' +
+      ' will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
   LOGO: hackathonLogo
 };
 
@@ -231,9 +233,9 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: 'Rehan',
+      Name: 'Peterson Guo',
       role: 'Organizer',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
+      github: 'https://github.com/Peterson120',
       linkedin: '',
       img: me
     },
@@ -342,7 +344,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'Who can attend?',
         content:
-          'Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'TLE Hacks is open to all undergraduate, high school students and middle school students from all schools.'
       },
       {
         label: 'I am a first time hacker, what should I do?',
@@ -364,7 +366,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.'
+          'Reach us directly at (tlehacks@gmail.com) we would happy to help you.'
       },
       {
         label: 'Can i volunteer?',
@@ -373,7 +375,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing Limbo Hacks swag!.'
+        content: 'Yes! Participants will receiving TLE Hacks swag!.'
       }
     ]
   ]
