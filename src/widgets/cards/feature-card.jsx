@@ -3,7 +3,7 @@ import { Card, CardBody, IconButton, Typography } from "@material-tailwind/react
 
 export function FeatureCard({ color, icon, title, description }) {
     return (
-        <Card className="rounded-2xl shadow-lg shadow-gray-500/10">
+        <Card className="rounded-2xl shadow-lg shadow-gray-500/10 bg-gray-800">
             <CardBody className="px-8 text-center">
                 <IconButton
                     variant="gradient"
@@ -13,10 +13,10 @@ export function FeatureCard({ color, icon, title, description }) {
                 >
                     {icon}
                 </IconButton>
-                <Typography variant="h5" className="mb-2" color="blue-gray">
+                <Typography variant="h5" className="mb-2 text-blue-gray-100" color="blue-gray">
                     {title}
                 </Typography>
-                <Typography className="font-normal text-blue-gray-600">
+                <Typography className="font-normal text-blue-gray-200">
                     {description}
                 </Typography>
             </CardBody>

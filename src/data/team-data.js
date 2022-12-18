@@ -75,6 +75,7 @@ export const teamData = [
             }
         ]
     }
+    // do we want to keep the social medias?
 ];
 
 export default teamData;

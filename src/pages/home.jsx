@@ -3,7 +3,7 @@ import { Button, Card, CardBody, CardHeader, Input, Textarea, Typography } from 
 import { ClockIcon } from "@heroicons/react/24/solid";
 import { Carousel, Footer, PageTitle } from "@/widgets/layout";
 import { FeatureCard } from "@/widgets/cards";
-import { featuresData, sponsorData, teamData } from "@/data";
+import { featuresData, sponsorData, teamData, faqData } from "@/data";
 
 export function Home() {
     return (
@@ -28,12 +28,17 @@ export function Home() {
                                 Virtual
                             </Typography>
                             <a target="_blank"
-                               href="https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link">
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link">
                                 <Button>Get Started</Button>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+            {/* Intro (after hero) */}
+            <>
+            <div className="container z-10 mx-auto p-4 sticky top-0">
+                <Navbar routes={routes} />
             </div>
             <section className="-mt-32 bg-gray-900 px-4 pb-20 pt-4">
                 <div className="container mx-auto">
@@ -71,12 +76,12 @@ export function Home() {
                                 and build a project you'll be able to showcase.
                             </Typography>
                             <a target="_blank"
-                               href="https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link">
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdFYToSBT1A7jTVzqTgRl4Z-oi9dqZsdp211Kv7sbfZ7iQZvg/viewform?usp=sf_link">
                                 <Button variant="outlined">Get Started</Button>
                             </a>
                         </div>
                         <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-                            <Card className="shadow-lg shadow-gray-500/10">
+                            <Card className="shadow-lg shadow-gray-500/10 bg-gray-800">
                                 <CardHeader className="relative h-56">
                                     <img
                                         alt="Card Image"
@@ -88,11 +93,11 @@ export function Home() {
                                     <Typography
                                         variant="h5"
                                         color="blue-gray"
-                                        className="mb-3 font-bold"
+                                        className="mb-3 font-bold text-blue-gray-100"
                                     >
                                         Requirements
                                     </Typography>
-                                    <Typography className="font-normal text-blue-gray-500">
+                                    <Typography className="font-normal text-blue-gray-200">
                                         Only <b>high school students</b> eligible.
                                         <br />
                                         You can work alone or in a team with <b>upto 6</b> members.
@@ -103,11 +108,39 @@ export function Home() {
                     </div>
                 </div>
             </section>
-            <section className="px-4 pt-20 pb-48 bg-blue-gray-900">
+            {/* FAQ */}
+            <section className="px-4 pt-20 pb-20 bg-gray-950">
+                <div className="container mx-auto flex flex-wrap items-center justify-center w-full px-4">
+                    <Card className="shadow-lg shadow-gray-500/10 bg-gray-800">
+                        <CardBody>
+                            <Typography
+                                variant="h5"
+                                color="blue-gray"
+                                className="mb-3 font-bold text-blue-gray-100"
+                            >
+                                FAQ
+                            </Typography>
+                            <Typography className="font-normal text-blue-gray-200">
+                                {faqData.map(({ question, answer }) => (
+                                    <div>
+                                        <b>Q: {question}</b>
+                                        <br />
+                                        A: {answer}
+                                        <br />
+                                        <br />
+                                    </div>
+                                ))}
+                            </Typography>
+                        </CardBody>
+                    </Card>
+                </div>
+            </section>
+            {/* SHSM */}
+            <section className="px-4 pt-20 pb-48 bg-gray-900">
                 <div className="container mx-auto">
                     <div className="mt-32 flex flex-wrap items-center">
                         <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-                            <Card className="shadow-lg shadow-gray-500/10">
+                            <Card className="shadow-lg shadow-gray-500/10 bg-gray-800">
                                 <CardHeader className="relative h-56">
                                     <img
                                         alt="Card Image"
@@ -119,11 +152,11 @@ export function Home() {
                                     <Typography
                                         variant="h5"
                                         color="blue-gray"
-                                        className="mb-3 font-bold"
+                                        className="mb-3 font-bold text-blue-gray-100"
                                     >
                                         What is SHSM?
                                     </Typography>
-                                    <Typography className="font-normal text-blue-gray-500">
+                                    <Typography className="font-normal text-blue-gray-200">
                                         <a target="_blank" href="https://shsmpeths.ca/join">
                                             <Button variant="outlined">Check out SHSM</Button></a>
                                     </Typography>
@@ -133,12 +166,12 @@ export function Home() {
                         <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
                             <Typography
                                 variant="h3"
-                                className="mb-3 font-bold text-blue-gray-50"
+                                className="mb-3 font-bold text-blue-gray-100"
                                 color="blue-gray"
                             >
                                 From SHSM?
                             </Typography>
-                            <Typography className="mb-8 font-normal text-blue-gray-100">
+                            <Typography className="mb-8 font-normal text-blue-gray-200">
                                 In order to earn a SHSM credit, you must either make a submission to the Hackathon or
                                 participate in at least one workshop.
                             </Typography>
@@ -146,33 +179,8 @@ export function Home() {
                     </div>
                 </div>
             </section>
-            <section className="px-4 pt-20 pb-48 bg-gray-900">
-                <div className="container mx-auto text-blue-gray-50">
-                    <PageTitle heading="Our Team" color="white">
-                        Dedicated students from Pierre Elliott Trudeau High School
-                    </PageTitle>
-                    {/* <Carousel /> */}
-                    <Carousel teamData={teamData} />
-                    {/* {teamData.map(({ img, name, position, socials }) => (
-              <TeamCard
-              key={name}
-              img={img}
-              name={name}
-              position={position}
-              socials={
-                <div className="flex items-center gap-2">
-                  {socials.map(({ color, name }) => (
-                    <IconButton key={name} color={color} variant="text">
-                      <i className={`fa-brands text-lg fa-${name}`} />
-                    </IconButton>
-                  ))}
-                </div>
-              }
-              />
-            ))} */}
-                </div>
-            </section>
-            <section className="relative bg-blue-gray-900 py-24 px-4">
+            {/* Sponsors */}
+            <section className="relative bg-gray-950 py-24 px-4">
                 <div className="container mx-auto">
                     <PageTitle heading="Sponsors">
                     </PageTitle>
@@ -188,9 +196,6 @@ export function Home() {
                                 <div
                                     className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
                                     <img src={logo} />
-                                    {/* {React.createElement(logo, {
-                    className: "w-5 h-5",
-                  })} */}
                                 </div>
                                 <Typography variant="h5" color="blue-gray" className="mb-2 text-blue-gray-100">
                                     {sponsor}
@@ -217,7 +222,17 @@ export function Home() {
                     </form>
                 </div>
             </section>
-            <div className="bg-blue-gray-900">
+            {/* Team */}
+            <section className="px-4 pt-20 pb-48 bg-gray-900">
+                <div className="container mx-auto text-blue-gray-50">
+                    <PageTitle heading="Our Team" color="white">
+                        Dedicated students from Pierre Elliott Trudeau High School
+                    </PageTitle>
+                    <Carousel teamData={teamData} />
+                </div>
+            </section>
+            </>
+            <div className="bg-gray-900">
                 <Footer />
             </div>
         </>
