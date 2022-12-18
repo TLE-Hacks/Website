@@ -61,7 +61,7 @@ export function Navbar({ brandName, routes, action }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-3">
+    <MTNavbar color="transparent" className="p-3" position="sticky" top={0}>
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">

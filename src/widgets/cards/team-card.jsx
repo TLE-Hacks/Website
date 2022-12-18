@@ -10,11 +10,11 @@ export function TeamCard({ img, name, position, socials }) {
         size="xxl"
         className="h-full w-full shadow-lg shadow-gray-500/25"
       />
-      <Typography variant="h5" color="blue-gray" className="mt-6 mb-1">
+      <Typography variant="h5" color="blue-gray" className="mt-6 mb-1 text-blue-gray-100">
         {name}
       </Typography>
       {position && (
-        <Typography className="font-normal text-blue-gray-500">
+        <Typography className="font-normal text-blue-gray-100">
           {position}
         </Typography>
       )}

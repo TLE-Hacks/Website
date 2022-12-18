@@ -42,7 +42,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      <section className="-mt-32 bg-gray-50 px-4 pb-20 pt-4">
+      <section className="-mt-32 bg-gray-900 px-4 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map(({ color, title, icon, description }) => (
@@ -64,12 +64,12 @@ export function Home() {
               </div>
               <Typography
                 variant="h3"
-                className="mb-3 font-bold"
+                className="mb-3 font-bold text-blue-gray-50"
                 color="blue-gray"
               >
                 36-Hour Hackathon
               </Typography>
-              <Typography className="mb-8 font-normal text-blue-gray-500">
+              <Typography className="mb-8 font-normal text-blue-gray-100">
                 TLE Hacks is a 36-hour virtual hackathon hosted by Pierre Elliott Trudeau High School.
                 <br />
                 <br />
@@ -108,7 +108,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section className="px-4 pt-20 pb-48 bg-blue-gray-900">
         <div className="container mx-auto">
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
@@ -138,21 +138,21 @@ export function Home() {
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <Typography
                 variant="h3"
-                className="mb-3 font-bold"
+                className="mb-3 font-bold text-blue-gray-50"
                 color="blue-gray"
               >
                 From SHSM?
               </Typography>
-              <Typography className="mb-8 font-normal text-blue-gray-500">
+              <Typography className="mb-8 font-normal text-blue-gray-100">
                 In order to earn a SHSM credit, you must either make a submission to the Hackathon or participate in at least one workshop.
               </Typography>
             </div>
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48 bg-gray-50">
-        <div className="container mx-auto">
-          <PageTitle heading="Our Team">
+      <section className="px-4 pt-20 pb-48 bg-gray-900">
+        <div className="container mx-auto text-blue-gray-50">
+          <PageTitle heading="Our Team" color="white">
             Dedicated students from Pierre Elliott Trudeau High School
           </PageTitle>
           {/* <Carousel /> */}
@@ -176,7 +176,7 @@ export function Home() {
             ))} */}
         </div>
       </section>
-      <section className="relative bg-blue-gray-50/50 py-24 px-4">
+      <section className="relative bg-blue-gray-900 py-24 px-4">
         <div className="container mx-auto">
           <PageTitle heading="Sponsors">
           </PageTitle>
@@ -186,7 +186,7 @@ export function Home() {
                 key={sponsor}
                 color="transparent"
                 shadow={false}
-                className="text-center text-blue-gray-900"
+                className="text-center text-blue-gray-100"
               >
                 <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
                   <img src={logo} />
@@ -194,10 +194,10 @@ export function Home() {
                     className: "w-5 h-5",
                   })} */}
                 </div>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+                <Typography variant="h5" color="blue-gray" className="mb-2 text-blue-gray-100">
                   {sponsor}
                 </Typography>
-                <Typography className="font-normal text-blue-gray-500">
+                <Typography className="font-normal text-blue-gray-200">
                   {description}
                 </Typography>
               </Card>
@@ -219,7 +219,7 @@ export function Home() {
           </form>
         </div>
       </section>
-      <div className="bg-blue-gray-50/50">
+      <div className="bg-blue-gray-900">
         <Footer />
       </div>
     </>
