@@ -6,10 +6,10 @@ import {CalenderContextProvider} from './Context/calender.context';
 const rootElement = document.getElementById('body');
 
 ReactDOM.render(
-  <React.Fragment>
-    <CalenderContextProvider>
-      <Nav />
-    </CalenderContextProvider>
-  </React.Fragment>,
-  rootElement
+    <React.Fragment>
+        <CalenderContextProvider>
+            <Nav/>
+        </CalenderContextProvider>
+    </React.Fragment>,
+    rootElement
 );

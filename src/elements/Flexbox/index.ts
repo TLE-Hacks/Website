@@ -3,20 +3,20 @@ import styled from 'styled-components';
 const desktop = '@media only screen and (min-width: 992px)';
 
 interface FlexBoxTypes {
-  flexRow?: boolean;
-  flexCol?: boolean;
-  justifyBtw?: boolean;
-  justifyAround?: boolean;
-  justifyFlexStart?: boolean;
-  justifyFlexEnd?: boolean;
-  justifyStart?: boolean;
-  justifyEnd?: boolean;
-  justifyCenter?: boolean;
-  alignStart?: boolean;
-  alignCenter?: boolean;
-  alignEnd?: boolean;
-  flexRowLg?: boolean;
-  flexColLg?: boolean;
+    flexRow?: boolean;
+    flexCol?: boolean;
+    justifyBtw?: boolean;
+    justifyAround?: boolean;
+    justifyFlexStart?: boolean;
+    justifyFlexEnd?: boolean;
+    justifyStart?: boolean;
+    justifyEnd?: boolean;
+    justifyCenter?: boolean;
+    alignStart?: boolean;
+    alignCenter?: boolean;
+    alignEnd?: boolean;
+    flexRowLg?: boolean;
+    flexColLg?: boolean;
 }
 
 export const Flexbox = styled.div<FlexBoxTypes>`
@@ -37,6 +37,7 @@ export const Flexbox = styled.div<FlexBoxTypes>`
   align-items: ${({alignStart}) => alignStart && 'flex-start'};
   align-items: ${({alignCenter}) => alignCenter && 'center'};
   align-items: ${({alignEnd}) => alignEnd && 'flex-end'};
+
   ${desktop} {
     flex-direction: ${({flexRowLg}) => flexRowLg && 'row'};
     flex-direction: ${({flexColLg}) => flexColLg && 'column'};

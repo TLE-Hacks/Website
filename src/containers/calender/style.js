@@ -26,9 +26,11 @@ export const Container = styled.div`
         height: 35px;
         border-radius: 50%;
         cursor: pointer;
+
         &__disabled {
           opacity: 0.3;
         }
+
         & img {
           width: 95%;
         }
@@ -39,6 +41,7 @@ export const Container = styled.div`
       }
     }
   }
+
   .card-body {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -50,6 +53,7 @@ export const Container = styled.div`
       height: 45px;
       border-radius: 8px;
     }
+
     &-inner {
       width: 45px;
       height: 45px;
@@ -57,19 +61,23 @@ export const Container = styled.div`
       margin: 10px 4px;
       background: #fff;
       color: #e0e0e0;
+
       &__active {
         transition: 0.2s;
         color: #241b5b;
         cursor: pointer;
+
         p {
           font-weight: 600;
           position: relative;
         }
+
         &:hover {
           background: #ff4a6f;
           box-shadow: 0px 1px 5px #ff4a6f;
           color: white;
         }
+
         &__event {
           &:after {
             position: absolute;
@@ -112,14 +120,13 @@ export const Event = styled.div`
 
     & h3 {
       font-size: 20px;
-      background-image: linear-gradient(
-        83.2deg,
-        rgba(150, 93, 233, 1) 10.8%,
-        rgba(99, 88, 238, 1) 94.3%
-      );
+      background-image: linear-gradient(83.2deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     & p {
       font-size: 17px;
       font-weight: 500;
@@ -162,13 +169,16 @@ export const EventLayout = styled.div`
     color: #fff;
     font-size: 18px;
   }
+
   & p {
     font-weight: 300;
   }
+
   .image-layout {
     text-align: center;
     width: 150px;
   }
+
   & img {
     height: 120px;
     width: 120px;

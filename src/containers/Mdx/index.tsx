@@ -8,20 +8,20 @@ import {Fragment} from 'react';
 // `options.providerImportSource: '@mdx-js/react'`.
 
 const components = {
-  h1: (props: any) => <h1 {...props} />
+    h1: (props: any) => <h1 {...props} />
 };
 
 export const MdxContent = () => {
-  return (
-    <Fragment>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-      <h1>cgdsjhgfchds</h1>
-    </Fragment>
-  );
+    return (
+        <Fragment>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+            <h1>cgdsjhgfchds</h1>
+        </Fragment>
+    );
 };

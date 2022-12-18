@@ -5,21 +5,21 @@ import {calenderReducer, initialState} from '../reducers/calender.reducer';
 export const calenderContext = createContext<ContextType>(null as any);
 
 export const CalenderContextProvider: React.FC = ({children}) => {
-  const [state, dispatch] = useReducer<Reducer<State, Action>>(
-    calenderReducer,
-    initialState
-  );
-  const value: ContextType = useMemo(
-    () => ({
-      state,
-      dispatch
-    }),
-    [state]
-  );
+    const [state, dispatch] = useReducer<Reducer<State, Action>>(
+        calenderReducer,
+        initialState
+    );
+    const value: ContextType = useMemo(
+        () => ({
+            state,
+            dispatch
+        }),
+        [state]
+    );
 
-  return (
-    <calenderContext.Provider value={value}>
-      {children}
-    </calenderContext.Provider>
-  );
+    return (
+        <calenderContext.Provider value={value}>
+            {children}
+        </calenderContext.Provider>
+    );
 };

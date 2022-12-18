@@ -52,101 +52,101 @@ const Wrapper = styled.div`
 // };
 
 const NAVBAR = ({}) => {
-  const [toggle, setToggle] = useState(true);
-  const [isOffset, setIsOffset] = useState(false);
+    const [toggle, setToggle] = useState(true);
+    const [isOffset, setIsOffset] = useState(false);
 
-  const navigation = useRef();
+    const navigation = useRef();
 
-  const listenScrollEvent = e => {
-    if (window.scrollY >= NAVIGATION_OFFSET) {
-      setIsOffset(true);
-    } else {
-      setIsOffset(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-    return () => window.removeEventListener('scroll', listenScrollEvent);
-  }, []);
-
-  const handleOutsideCick = (event, ref) => {
-    if (!ref.current.contains(event.target)) {
-      setToggle(true);
-    } else {
-      setToggle(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', e =>
-      handleOutsideCick(e, navigation)
-    );
-
-    return () => {
-      document.removeEventListener('mousedown', e =>
-        handleOutsideCick(e, navigation)
-      );
+    const listenScrollEvent = e => {
+        if (window.scrollY >= NAVIGATION_OFFSET) {
+            setIsOffset(true);
+        } else {
+            setIsOffset(false);
+        }
     };
-  }, []);
 
-  return (
-    <Router>
-      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
-        <Wrapper toggle={toggle}>
-          <div className="nav-content" ref={navigation}>
-            <ul>
-              <li>
-                <Link to={`#home`}>
-                  <span className="links">Home </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{' '}
-                </Link>
-              </li>
-              <li>
-                <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
-                </Link>
-              </li>
-              <img
-                className="s-close"
-                onClick={() => setToggle(true)}
-                src={logoClose}
-              />
-            </ul>
-          </div>
-          <div className="ease" />
-        </Wrapper>
-        <img
-          className="s-open"
-          onClick={() => setToggle(false)}
-          src={hamLogo}
-        />
-      </nav>
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+        return () => window.removeEventListener('scroll', listenScrollEvent);
+    }, []);
 
-      <Switch>
-        <Route path="/blog" exact={true}>
-          <MdxContent />
-        </Route>
-        <Route path="/" exact={true}>
-          <HomePage />
-        </Route>
-      </Switch>
-    </Router>
-  );
+    const handleOutsideCick = (event, ref) => {
+        if (!ref.current.contains(event.target)) {
+            setToggle(true);
+        } else {
+            setToggle(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', e =>
+            handleOutsideCick(e, navigation)
+        );
+
+        return () => {
+            document.removeEventListener('mousedown', e =>
+                handleOutsideCick(e, navigation)
+            );
+        };
+    }, []);
+
+    return (
+        <Router>
+            <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
+                <Wrapper toggle={toggle}>
+                    <div className="nav-content" ref={navigation}>
+                        <ul>
+                            <li>
+                                <Link to={`#home`}>
+                                    <span className="links">Home </span>{' '}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={`#faq`}>
+                                    <span className="links">FAQ </span>{' '}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={`#prizes`}>
+                                    <span className="links">prizes </span>{' '}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={`#sponsors`}>
+                                    <span className="links">sponsors </span>{' '}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={`#team`}>
+                                    <span className="links">team </span>{' '}
+                                </Link>
+                            </li>
+                            <img
+                                className="s-close"
+                                onClick={() => setToggle(true)}
+                                src={logoClose}
+                            />
+                        </ul>
+                    </div>
+                    <div className="ease"/>
+                </Wrapper>
+                <img
+                    className="s-open"
+                    onClick={() => setToggle(false)}
+                    src={hamLogo}
+                />
+            </nav>
+
+            <Switch>
+                <Route path="/blog" exact={true}>
+                    <MdxContent/>
+                </Route>
+                <Route path="/" exact={true}>
+                    <HomePage/>
+                </Route>
+            </Switch>
+        </Router>
+    );
 };
 
 export default NAVBAR;
