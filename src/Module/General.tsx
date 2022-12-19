@@ -170,13 +170,13 @@ const Prizeinfo = [
         //Array 1
         {
             icon: <i className="first fas fa-4x fa-trophy"></i>,
-            type: 'overall First',
+            type: 'Overall First',
             content:
                 'First Overall prize will be given to a project that outstands all other submissions'
         },
         {
             icon: <i className=" second fas fa-4x fa-medal"></i>,
-            type: 'overall Second',
+            type: 'Overall Second',
             content:
                 'Second Overall prize will be given to the second best project of the hackathon'
         },

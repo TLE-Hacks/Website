@@ -208,7 +208,7 @@ const Prizeinfo = [
     //Array 1
     {
       icon: <i class="first fas fa-4x fa-trophy"></i>,
-      type: "overall First",
+      type: "Overall First",
       content:
         "First Overall prize .."
     },{....
