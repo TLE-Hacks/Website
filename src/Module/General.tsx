@@ -34,7 +34,7 @@ const TOP_SECTION = {
     TITLE: 'Join TLE Hacks',
     Typed_effect: ['36 hours of creation', 1000, 'Win awesome prizes', 1000],
     SHORT_DESCRIPTION:
-        'Join us on 20th November 2021 with over 300 students from across the nation for 36 hours of creation, innovation, & fun.',
+        'Join us on 20th November 2023 with over 300 students from across the nation for 36 hours of creation, innovation, & fun.',
     IMG_SRC: boy,
     DISCORD_LINK: '',
     JUDGES_FORM_LINK:
@@ -87,17 +87,17 @@ const FOOTER = {
  *
  * INSTRUCTIONS
  *
- * Date format : 8-11-2021, 18-11-2021 (without trailing zeros)
+ * Date format : 8-11-2023, 18-11-2023 (without trailing zeros)
  */
 
-const calenderStartingDate = {
+const calendarStartingDate = {
     month: 12,
-    year: 2021
+    year: 2023
 };
 
 const schedule = [
     {
-        day: '8-11-2021',
+        day: '8-11-2023',
         events: [
             {
                 title: 'Intro to psychology',
@@ -107,7 +107,7 @@ const schedule = [
         ]
     },
     {
-        day: '5-12-2021',
+        day: '5-12-2023',
         events: [
             {
                 title: 'Intro to deep learning',
@@ -122,7 +122,7 @@ const schedule = [
         ]
     },
     {
-        day: '3-12-2021',
+        day: '3-12-2023',
         events: [
             {
                 title: 'Intro to psychology',
@@ -132,7 +132,7 @@ const schedule = [
         ]
     },
     {
-        day: '1-12-2021',
+        day: '1-12-2023',
         events: [
             {
                 title: 'Intro to deep learning',
@@ -390,5 +390,5 @@ export {
     JudgesInfo,
     frequentlyAskedQuestions,
     schedule,
-    calenderStartingDate
+    calendarStartingDate
 };

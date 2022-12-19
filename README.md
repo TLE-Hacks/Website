@@ -7,7 +7,7 @@
 
 #### Demo view
 
-![gifs](https://github.com/Limbo-Hacks/Hackathon-website-template/blob/main/Resources/Screen%20Recording%202021-08-14%20at%2010.42.16%20PM.gif)
+![gifs](https://github.com/Limbo-Hacks/Hackathon-website-template/blob/main/Resources/Screen%20Recording%202023-08-14%20at%2010.42.16%20PM.gif)
 
 **For help you can join our discord [click here](https://discord.com/invite/8XJSzmtWPp)**
 
@@ -39,7 +39,7 @@ Just change `src/Module/general.js` to get your hackathon portfolio. Customize a
 
 ✔️ General hackathon Info.
 
-✔️ Hackathon calender with schedule.
+✔️ Hackathon calendar with schedule.
 
 ✔️ Registrations links.
 
@@ -145,7 +145,7 @@ const TOP_SECTION = {
   // Typing effect
   Typed_effect: ["24 hours of creation", "Win awesome prizes"],
   SHORT_DESCRIPTION:
-    "Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
+    "Join us on 20th November 2023 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
   // This image will be used for top section right side image
   IMG_SRC:boy ,
   DISCORD_LINK: "",
@@ -275,14 +275,14 @@ Change meta tags content in `/public/index.html`
 <meta name="author" content="LimboHacks" />
 <meta
   name="description"
-  content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun."
+  content="Join us on 20th November 2023 with over 300 students from across the nation for 24 hours of creation, innovation, & fun."
 />
 <meta itemprop="name" content="LimboHacks" />
 <meta
   name="google-site-verification"
   content="bbrVrhB_49iICKc-JLwkQG6qCWAQABQpCJ_ghVXOi2E"
 />
-<meta property="og:title" content="Limbo Hacks 2021" />
+<meta property="og:title" content="Limbo Hacks 2023" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@limbohacks" />
@@ -300,7 +300,7 @@ Change meta tags content in `/public/index.html`
 <meta name="twitter:image" content="https://i.imgur.com/bxP3Jz1.png" />
 <meta
   property="og:description"
-  content="Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation & fun."
+  content="Join us on 20th November 2023 with over 300 students from across the nation for 24 hours of creation, innovation & fun."
 />
 ```
 

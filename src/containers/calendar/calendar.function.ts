@@ -1,4 +1,4 @@
-import {EventArrayType} from '../../../types/calenderState.types';
+import {EventArrayType} from '../../../types/calendarState.types';
 import {weekDays} from '../../constants';
 
 export const getDatesForMonth = (state: any) => {
@@ -34,7 +34,7 @@ export const getDatesForMonth = (state: any) => {
     return [totalNumOfDays, extraDays, totalNumOfDaysInPreviousMonths];
 };
 
-export const calenderMainLogic = (state: any, dispatch: any, data: any) => {
+export const calendarMainLogic = (state: any, dispatch: any, data: any) => {
     let structureToHoldDates: EventArrayType[] = [];
 
     const [num, paddingDay, totalNumOfDaysInPreviousMonths] =

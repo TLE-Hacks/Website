@@ -41,16 +41,23 @@ export const Container = styled.div`
       }
     }
   }
+  
+  .card-body-header p {
+    font-weight: 1000;
+  }
 
   .card-body {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
-
+	padding: 1vw;
+    justify-content: space-between;
     overflow: scroll;
 
     &-header {
       width: 45px;
       height: 45px;
+      color: black;
+      font-weight: 1000;
       border-radius: 8px;
     }
 
@@ -74,7 +81,7 @@ export const Container = styled.div`
 
         &:hover {
           background: #ff4a6f;
-          box-shadow: 0px 1px 5px #ff4a6f;
+          box-shadow: 0 1px 5px #ff4a6f;
           color: white;
         }
 
@@ -99,7 +106,7 @@ export const Container = styled.div`
 `;
 
 export const Event = styled.div`
-  box-shadow: 0px 1px 5px rgba(167, 167, 167, 0.15);
+  box-shadow: 0 1px 5px rgba(167, 167, 167, 0.15);
 
   margin: 10px 0px;
   padding: 0 10px;

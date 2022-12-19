@@ -21,7 +21,7 @@ export interface EventArrayType {
 
 
 // This is Global state types (i.e store type for calendar global store)
-export interface CalenderStateTypes {
+export interface CalendarStateTypes {
     index: number;
     selectedData: EventType[];
     selectedEvent: EventType,
@@ -32,7 +32,7 @@ export interface CalenderStateTypes {
 
 export interface Action {
     type:
-        | 'UPDATE_CALENDER_VIEW'
+        | 'UPDATE_CALENDAR_VIEW'
         | 'SHOW_EVENTS_FOR_SELECTED_DATE'
         | 'UPDATE_DATES'
         | 'MONTH_BACKWARD'

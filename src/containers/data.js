@@ -1,6 +1,6 @@
 [
     {
-        day: '8-11-2021',
+        day: '8-11-2023',
         events: [
             {
                 title: 'Intro to pyschology',
@@ -15,7 +15,7 @@
         ]
     },
     {
-        day: '5-12-2021',
+        day: '5-12-2023',
         events: [
             {
                 title: 'Intro to deep learning',
@@ -40,7 +40,7 @@
         ]
     },
     {
-        day: '3-12-2021',
+        day: '3-12-2023',
         events: [
             {
                 title: 'Intro to psychology',
@@ -55,7 +55,7 @@
         ]
     },
     {
-        day: '1-12-2021',
+        day: '1-12-2023',
         events: [
             {
                 title: 'Intro to deep learning',

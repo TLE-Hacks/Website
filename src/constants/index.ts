@@ -30,5 +30,5 @@ export const options = {
     day: 'numeric'
 };
 
-export const CALENDER_VIEW = 1;
+export const CALENDAR_VIEW = 1;
 export const EVENT_VIEW = 2;

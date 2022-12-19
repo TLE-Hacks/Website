@@ -1,18 +1,18 @@
-import {Action, State} from '../../types/calenderState.types';
-import {CALENDER_VIEW} from '../constants';
-import {calenderStartingDate} from '../Module/General';
+import {Action, State} from '../../types/calendarState.types';
+import {CALENDAR_VIEW} from '../constants';
+import {calendarStartingDate} from '../Module/General';
 
 export const initialState = {
-    index: CALENDER_VIEW,
+    index: CALENDAR_VIEW,
     selectedData: [],
     selectedEvent: {},
     dates: [],
-    ...calenderStartingDate
+    ...calendarStartingDate
 };
 
-export const calenderReducer = (state: State, payload: Action): State => {
+export const calendarReducer = (state: State, payload: Action): State => {
     switch (payload.type) {
-        case 'UPDATE_CALENDER_VIEW':
+        case 'UPDATE_CALENDAR_VIEW':
             return {...state, index: payload.data as number};
         case 'SHOW_EVENTS_FOR_SELECTED_DATE':
             return {...state, selectedData: payload.data as any[]};

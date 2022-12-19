@@ -1,15 +1,15 @@
 import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion';
 import {useContext, useEffect} from 'react';
-import {CALENDER_VIEW} from '../../constants';
-import {calenderContext} from '../../Context/calender.context';
+import {CALENDAR_VIEW} from '../../constants';
+import {calendarContext} from '../../Context/calendar.context';
 import {Flexbox} from '../../elements/Flexbox';
-import {calenderMainLogic} from './calender.function';
-import CalenderLayout from './calender.layout';
+import {calendarMainLogic} from './calendar.function';
+import CalendarLayout from './calendar.layout';
 
 import * as H from './style';
 
-const CalenderView = () => {
-    const contextTesting = useContext(calenderContext);
+const CalendarView = () => {
+    const contextTesting = useContext(calendarContext);
     const {state, dispatch} = contextTesting;
     return (
         <div className="card-body">
@@ -29,7 +29,7 @@ const CalenderView = () => {
                     }
                     onClick={() => {
                         if (day.event) {
-                            dispatch({type: 'UPDATE_CALENDER_VIEW', data: 2});
+                            dispatch({type: 'UPDATE_CALENDAR_VIEW', data: 2});
                             dispatch({
                                 type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
                                 data: state.dates[j].events
@@ -52,7 +52,7 @@ const CalenderView = () => {
 };
 
 const EventsView = () => {
-    const contextTesting = useContext(calenderContext);
+    const contextTesting = useContext(calendarContext);
     const {state} = contextTesting as any;
     return (
         <H.EventContainer>
@@ -67,32 +67,32 @@ const EventsView = () => {
                         <h3>{event.title}</h3>
                         <p>{event.timings}</p>
                     </div>
-                    <button>Add to calender</button>
+                    <button>Add to calendar</button>
                 </H.Event>
             ))}
         </H.EventContainer>
     );
 };
 
-export const Calender = ({data}: any) => {
-    const contextTesting = useContext(calenderContext);
+export const Calendar = ({data}: any) => {
+    const contextTesting = useContext(calendarContext);
     const {state, dispatch} = contextTesting;
 
     useEffect(() => {
-        calenderMainLogic(state, dispatch, data);
+        calendarMainLogic(state, dispatch, data);
     }, [state.month]);
 
     return (
-        <CalenderLayout
+        <CalendarLayout
             handleActionProceed={
-                state.index === CALENDER_VIEW
+                state.index === CALENDAR_VIEW
                     ? {type: 'MONTH_FORWARD'}
                     : {type: 'DISABLED'}
             }
             handleActionBack={
-                state.index === CALENDER_VIEW
+                state.index === CALENDAR_VIEW
                     ? {type: 'MONTH_BACKWARD'}
-                    : {type: 'UPDATE_CALENDER_VIEW', data: 1}
+                    : {type: 'UPDATE_CALENDAR_VIEW', data: 1}
             }
         >
             <AnimatePresence exitBeforeEnter>
@@ -103,9 +103,9 @@ export const Calender = ({data}: any) => {
                     exit={{y: -1, opacity: 0}}
                     transition={{duration: 0.2}}
                 >
-                    {state.index === CALENDER_VIEW ? <CalenderView/> : <EventsView/>}
+                    {state.index === CALENDAR_VIEW ? <CalendarView/> : <EventsView/>}
                 </motion.div>
             </AnimatePresence>
-        </CalenderLayout>
+        </CalendarLayout>
     );
 };

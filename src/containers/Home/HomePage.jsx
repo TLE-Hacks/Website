@@ -21,7 +21,7 @@ import {
     TeamInfo,
     TOP_SECTION
 } from '../../Module/General';
-import MyCalender from '../calender';
+import MyCalendar from '../calendar';
 import './about.css';
 import pattern from './assets/pattern4.png';
 
@@ -89,7 +89,7 @@ export default function HomePage() {
                             <Myinfo/>
                         </Col>
                         <Col className="d-image" sm={12} lg={5} md={5}>
-                            <MyCalender/>
+                            <MyCalendar/>
                         </Col>
                     </Row>
 
@@ -142,26 +142,14 @@ export default function HomePage() {
 
                 {/* ********Team here ***** */}
                 <h1 id="team">Our Team</h1>
-                {FOOTER.JOIN_TEAM.required && (
-                    <JoinTeam
-                        placeholder="Join our team"
-                        formLink={FOOTER.JOIN_TEAM}
-                        content="Interested in joining our team"
-                    />
-                )}
+                {FOOTER.JOIN_TEAM.required}
                 {TeamInfo.map(TeamMembers)}
                 {/* ********Team ending here ***** */}
 
                 {/* ********Judges here ***** */}
 
-                <h1 id="team">Judges</h1>
-                {FOOTER.JOIN_TEAM.required && (
-                    <JoinTeam
-                        placeholder="Join our team"
-                        formLink={TOP_SECTION.JUDGES_FORM_LINK}
-                        content="Interested in being judge"
-                    />
-                )}
+                <h1 id="team" style={{marginTop: "10vh"}}>Judges</h1>
+                {FOOTER.JOIN_TEAM.required}
                 {JudgesInfo.map(TeamMembers)}
                 {/* ********Team ending here ***** */}
             </Container>

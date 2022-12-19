@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import {CALENDER_VIEW} from '../../constants';
+import {CALENDAR_VIEW} from '../../constants';
 import {months} from '../../constants';
-import {calenderContext} from '../../Context/calender.context';
+import {calendarContext} from '../../Context/calendar.context';
 import {Flexbox} from '../../elements/Flexbox';
 import * as H from './style';
 
@@ -10,17 +10,17 @@ interface actionTypes {
     data?: number | string;
 }
 
-interface CalenderLayoutProps {
+interface CalendarLayoutProps {
     handleActionProceed?: actionTypes;
     handleActionBack?: actionTypes;
 }
 
-const CalenderLayout: React.FC<CalenderLayoutProps> = ({
+const CalendarLayout: React.FC<CalendarLayoutProps> = ({
                                                            children,
                                                            handleActionProceed,
                                                            handleActionBack
                                                        }) => {
-    const contextTesting = useContext(calenderContext);
+    const contextTesting = useContext(calendarContext);
     const {state, dispatch} = contextTesting as any;
     return (
         <H.Container>
@@ -41,7 +41,7 @@ const CalenderLayout: React.FC<CalenderLayoutProps> = ({
                         justifyCenter
                         alignCenter
                         className={`card-top-inner-item ${
-                            state.index !== CALENDER_VIEW && 'card-top-inner-item__disabled'
+                            state.index !== CALENDAR_VIEW && 'card-top-inner-item__disabled'
                         }`}
                         onClick={() => dispatch(handleActionProceed)}
                     >
@@ -54,4 +54,4 @@ const CalenderLayout: React.FC<CalenderLayoutProps> = ({
     );
 };
 
-export default CalenderLayout;
+export default CalendarLayout;
