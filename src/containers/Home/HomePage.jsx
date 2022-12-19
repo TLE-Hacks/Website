@@ -11,15 +11,14 @@ import {Myinfo} from '../../components/Landing';
 import {FirstPrize, PrizeHeading} from '../../components/Prizes';
 import Media from '../../components/Socials/index.jsx';
 import {Sponsor, SponsorsHead, SponsorUS} from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import {Member} from '../../components/Team';
 import {
     FOOTER,
     frequentlyAskedQuestions,
     JudgesInfo,
     Prizeinfo,
     sponsorLogos,
-    TeamInfo,
-    TOP_SECTION
+    TeamInfo
 } from '../../Module/General';
 import MyCalendar from '../calendar';
 import './about.css';
@@ -119,15 +118,10 @@ export default function HomePage() {
 
                 {/* ********Prizes here ***** */}
                 <Row className="prize_section" id="prizes">
-                    <PrizeHeading type="Prize section"/>
+                    <PrizeHeading type="Prizes"/>
                     {Prizeinfo.map(PrizeGroup)}
                 </Row>
                 {/* ********Prizes ending here ***** */}
-
-                <Row className="prize_section non-coding">
-                    <PrizeHeading type="Non-coding prizes"/>
-                    <h2>coming soon</h2>
-                </Row>
 
                 {/* ********Sponsors here ***** */}
 
@@ -141,14 +135,14 @@ export default function HomePage() {
                 {media && <Birds top="120vh" left="0vh" type=""/>}
 
                 {/* ********Team here ***** */}
-                <h1 id="team">Our Team</h1>
+                <h1 id="team" style={{marginTop: "15vh"}}>Our Team</h1>
                 {FOOTER.JOIN_TEAM.required}
                 {TeamInfo.map(TeamMembers)}
                 {/* ********Team ending here ***** */}
 
                 {/* ********Judges here ***** */}
 
-                <h1 id="team" style={{marginTop: "10vh"}}>Judges</h1>
+                <h1 id="team" style={{marginTop: "15vh"}}>Judges</h1>
                 {FOOTER.JOIN_TEAM.required}
                 {JudgesInfo.map(TeamMembers)}
                 {/* ********Team ending here ***** */}

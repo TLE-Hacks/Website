@@ -1,5 +1,6 @@
 import {useEffect, useRef, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+// import { Link, animateScroll as scroll } from "react-scroll";
 import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
@@ -36,7 +37,7 @@ const NAVBAR = () => {
 
     const navigation = useRef();
 
-    const listenScrollEvent = e => {
+    const listenScrollEvent = () => {
         if (window.scrollY >= NAVIGATION_OFFSET) {
             setIsOffset(true);
         } else {
