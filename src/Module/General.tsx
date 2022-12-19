@@ -367,7 +367,7 @@ const frequentlyAskedQuestions = [
                     'Reach us directly at (tlehacks@gmail.com) we would happy to help you.'
             },
             {
-                label: 'Can i volunteer?',
+                label: 'Can I volunteer?',
                 content:
                     'Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.'
             },

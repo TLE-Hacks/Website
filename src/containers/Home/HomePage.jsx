@@ -118,13 +118,13 @@ export default function HomePage() {
                 </div>
 
                 {/* ********Prizes here ***** */}
-                <Row className="prizesection" id="prizes">
+                <Row className="prize_section" id="prizes">
                     <PrizeHeading type="Prize section"/>
                     {Prizeinfo.map(PrizeGroup)}
                 </Row>
                 {/* ********Prizes ending here ***** */}
 
-                <Row className="prizesection non-coding">
+                <Row className="prize_section non-coding">
                     <PrizeHeading type="Non-coding prizes"/>
                     <h2>coming soon</h2>
                 </Row>

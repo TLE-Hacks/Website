@@ -55,13 +55,11 @@ h1 {
     padding: 0 10vh 0 10vh;
 }
 
-.prizesection {
+.prize_section {
     text-align: center;
-    margin: 0 auto;
-    padding: 0 4vh 0 4vh;
-    margin: 17vh 0 0 0;
+    margin: 4vh 8vw;
+    padding: 4vh 4vw;
     border-radius: 14px;
-    margin-top: 4vh;
     background-color: #f3effe;
 }
 
@@ -71,7 +69,6 @@ h1 {
 
 .sponsorSection {
     padding: 17vh 18vh 0 18vh;
-    margin-top: -10vh;
     margin-top: 0;
 }
 
@@ -89,7 +86,7 @@ h1 {
         padding: 0;
     }
 
-    .prizesection {
+    .prize_section {
         margin: 5vh 0 0 0;
         padding: 17vh 0 0 4vh;
     }
@@ -97,7 +94,6 @@ h1 {
     .sponsorSection {
         padding: 0;
         margin: 0;
-        margin: 12rem auto;
     }
 
     .logoSection {
