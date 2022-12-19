@@ -1,12 +1,13 @@
-import Typed from 'react-typed';
+import React from 'react';
+import {TypeAnimation} from 'react-type-animation';
 import {TOP_SECTION} from '../../Module/General';
 import './style.css';
 
-export default function MytypedComponent() {
+export default function AnimatedTyping () {
     return (
         <div className="typing-div">
             <h1>
-                <Typed strings={TOP_SECTION.Typed_effect} typeSpeed={80} loop/>
+                <TypeAnimation sequence={TOP_SECTION.Typed_effect} repeat={Infinity} cursor={true} />
             </h1>
         </div>
     );

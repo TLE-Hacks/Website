@@ -32,7 +32,7 @@ import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
     TITLE: 'Join TLE Hacks',
-    Typed_effect: ['36 hours of creation', 'Win awesome prizes'],
+    Typed_effect: ['36 hours of creation', 1000, 'Win awesome prizes', 1000],
     SHORT_DESCRIPTION:
         'Join us on 20th November 2021 with over 300 students from across the nation for 36 hours of creation, innovation, & fun.',
     IMG_SRC: boy,

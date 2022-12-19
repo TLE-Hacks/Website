@@ -11,15 +11,15 @@ class Panel extends React.Component {
         };
     }
 
-    componentDidMount() {
-        window.setTimeout(() => {
-            const el = ReactDOM.findDOMNode(this);
-            const height = el.querySelector('.panel__inner').scrollHeight;
-            this.setState({
-                height
-            });
-        }, 333);
-    }
+    // componentDidMount() {
+    //     window.setTimeout(() => {
+    //         const el = ReactDOM.findDOMNode(this);
+    //         const height = el.querySelector('.panel__inner').scrollHeight;
+    //         this.setState({
+    //             height
+    //         });
+    //     }, 333);
+    // }
 
     render() {
         const {label, content, activeTab, index, activateTab} = this.props;

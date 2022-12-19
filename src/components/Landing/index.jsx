@@ -1,5 +1,5 @@
 import {SOCIALS, TOP_SECTION} from '../../Module/General';
-import MytypedComponent from '../Typed/index.js';
+import AnimatedTyping from '../Typed/index.js';
 import './style.css';
 
 const Btn = props => {
@@ -18,7 +18,7 @@ const About = () => {
     return (
         <div className="AboutMe">
             <h2>{TOP_SECTION.TITLE}</h2>
-            <MytypedComponent/>
+            <AnimatedTyping/>
         </div>
     );
 };
