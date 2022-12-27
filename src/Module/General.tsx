@@ -34,7 +34,7 @@ const TOP_SECTION = {
     TITLE: 'Join TLE Hacks',
     Typed_effect: ['36 hours of creation', 1000, 'Win awesome prizes', 1000],
     SHORT_DESCRIPTION:
-        'Join us on 20th November 2023 with over 300 students from across the nation for 36 hours of creation, innovation, & fun.',
+        'Join us on 24th February 2023 virtually from across the nation for 36 hours of creation, innovation, & fun.',
     IMG_SRC: boy,
     DISCORD_LINK: '',
     JUDGES_FORM_LINK:
@@ -57,7 +57,7 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
     TITLE: 'What is TLE Hacks?',
     LONG_DESCRIPTION:
-        'TLE Hacks is 36 hour long running hackathon will be held on November 20th & 21th , We calls for hackers,' +
+        'TLE Hacks is 36 hour long running hackathon will be held on February 24-26. We calls for hackers,' +
         ' artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part' +
         ' to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at TLE Hacks' +
         ' will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
@@ -66,19 +66,19 @@ const MIDDLE_SECTION = {
 
 const FOOTER = {
     VOLUNTEERING_FORM: {
-        required: true,
+        required: false,
         src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
     },
     JOIN_TEAM: {
-        required: true,
+        required: false,
         src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
     },
     Privacy_policy: {
-        required: true,
+        required: false,
         src: ''
     },
     Terms_of_use: {
-        required: true,
+        required: false,
         src: ''
     }
 };
@@ -91,67 +91,83 @@ const FOOTER = {
  */
 
 const calendarStartingDate = {
-    month: 12,
+    month: 2,
     year: 2023
 };
 
 const schedule = [
     {
-        day: '8-11-2023',
+        day: '24-2-2023',
         events: [
             {
-                title: 'Intro to psychology',
+                title: 'Intro to pyschology',
                 timings: '12 AM - 1 Pm',
-                link: 'https://google.com'
+                content:
+                    'JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language.  Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.',
+                image: 'https://i.imgur.com/EjM8qVK.jpg',
+                organizer: 'Porf Juliana',
+                role: 'Software Engineer',
+                company: 'JP Morgan'
             }
         ]
     },
     {
-        day: '5-12-2023',
+        day: '24-2-2023',
         events: [
             {
                 title: 'Intro to deep learning',
-                timings: '12 AM - 1 Pm',
-                link: 'https://google.com'
+                timings: '1 PM - 2 Pm',
+                content:
+                    'JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language.  Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.',
+                image: 'https://i.imgur.com/EjM8qVK.jpg',
+                organizer: 'Rahul Dravid',
+                role: 'Software Engineer',
+                company: 'JP Morgan'
             },
             {
                 title: 'Intro to deep learning',
                 timings: '12 AM - 1 Pm',
-                link: 'https://google.com'
+                content:
+                    'JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language.  Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.',
+                image: 'https://i.imgur.com/EjM8qVK.jpg',
+                organizer: 'Rahul Dravid',
+                role: 'Software Engineer',
+                company: 'JP Morgan'
             }
         ]
     },
     {
-        day: '3-12-2023',
+        day: '26-2-2023',
         events: [
             {
                 title: 'Intro to psychology',
                 timings: '12 AM - 1 Pm',
-                link: 'https://google.com'
+                content:
+                    'JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language.  Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.',
+                image: 'https://i.imgur.com/EjM8qVK.jpg',
+                organizer: 'Porf Juliana',
+                role: 'Software Engineer',
+                company: 'JP Morgan'
             }
         ]
     },
     {
-        day: '1-12-2023',
+        day: '25-2-2023',
         events: [
             {
                 title: 'Intro to deep learning',
                 timings: '12 AM - 1 Pm',
-                link: 'https://google.com'
-            }
-        ]
-    },
-    {
-        day: '1-1-2022',
-        events: [
-            {
-                title: 'Intro to psychology',
-                timings: '12 AM - 1 Pm',
-                link: 'https://google.com'
+                content:
+                    'JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language.  Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.',
+                image: 'https://i.imgur.com/EjM8qVK.jpg',
+                organizer: 'Rahul Dravid',
+                role: 'Software Engineer',
+                company: 'JP Morgan'
             }
         ]
     }
 ];
+
 
 /** ICON
  *
@@ -231,41 +247,56 @@ const TeamInfo = [
     [
         //Array 1
         {
-            Name: 'Peterson Guo',
-            role: 'Organizer',
+            name: 'Peterson Guo',
+            role: 'Director',
             github: 'https://github.com/Peterson120',
-            linkedin: '',
             img: me
         },
         {
-            Name: 'Moon',
-            role: 'Organizer',
-            github: '',
-            linkedin: '',
+            name: 'Jack Zhang',
+            role: 'Co-Director',
             img: moon
         },
         {
-            Name: 'Erika',
-            role: 'Organizer',
-            github: '',
-            linkedin: '',
+            name: 'Victoria Do',
+            role: 'Co-Director',
             img: Ryah
         }
     ],
     [
         //Array 2
         {
-            Name: 'Lyanola',
+            name: 'Bryson Lee',
             role: 'Organizer',
-            github: '',
-            linkedin: '',
             img: lyin
         },
         {
-            Name: 'Zoheb',
+            name: 'David Gao',
             role: 'Organizer',
-            github: '',
-            linkedin: '',
+            img: zoha
+        },
+        {
+            name: 'Eric Zhang',
+            role: 'Web Developer',
+            github: 'https://github.com/16BitNarwhal',
+            img: zoha
+        }
+    ],
+    [
+        //Array 3
+        {
+            name: 'Enoch Chan',
+            role: 'Lead Marketer',
+            img: lyin
+        },
+        {
+            name: 'Zain Malik',
+            role: 'Marketer',
+            img: zoha
+        },
+        {
+            name: 'Christine Lau',
+            role: 'Visual Designer',
             img: zoha
         }
     ]
@@ -275,21 +306,21 @@ const JudgesInfo = [
     [
         //Array 1
         {
-            Name: 'Rehan',
+            name: 'Rehan',
             role: 'Organizer',
             github: '',
             linkedin: '',
             img: me
         },
         {
-            Name: 'Moon',
+            name: 'Moon',
             role: 'Organizer',
             github: '',
             linkedin: '',
             img: moon
         },
         {
-            Name: 'Ryah Garcia',
+            name: 'Ryah Garcia',
             role: 'Organizer',
             github: '',
             linkedin: '',
@@ -299,14 +330,14 @@ const JudgesInfo = [
     [
         //Array 2
         {
-            Name: 'Lyanola',
+            name: 'Lyanola',
             role: 'Organizer',
             github: '',
             linkedin: '',
             img: lyin
         },
         {
-            Name: 'Zoheb',
+            name: 'Zoheb',
             role: 'Organizer',
             github: '',
             linkedin: '',
@@ -352,7 +383,7 @@ const frequentlyAskedQuestions = [
             {
                 label: 'How team formation works?',
                 content:
-                    "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+                    "You can form team with 4 members in it at maximum, with at least one member from Pierre Elliott Trudeau High School. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
             }
         ],
         [

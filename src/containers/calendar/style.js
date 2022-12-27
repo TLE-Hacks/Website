@@ -51,6 +51,7 @@ export const Container = styled.div`
     grid-template-columns: auto auto auto auto auto auto auto;
 	padding: 1vw;
     justify-content: space-between;
+
     overflow: scroll;
 
     &-header {

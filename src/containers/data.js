@@ -1,6 +1,6 @@
 [
     {
-        day: '8-11-2023',
+        day: '24-2-2023',
         events: [
             {
                 title: 'Intro to pyschology',
@@ -15,11 +15,11 @@
         ]
     },
     {
-        day: '5-12-2023',
+        day: '24-2-2023',
         events: [
             {
                 title: 'Intro to deep learning',
-                timings: '12 AM - 1 Pm',
+                timings: '1 PM - 2 Pm',
                 content:
                     'JAVA was developed by Sun Microsystems Inc in 1991, later acquired by Oracle Corporation. It was developed by James Gosling and Patrick Naughton. It is a simple programming language.  Writing, compiling and debugging a program is easy in java.  It helps to create modular programs and reusable code.',
                 image: 'https://i.imgur.com/EjM8qVK.jpg',
@@ -40,7 +40,7 @@
         ]
     },
     {
-        day: '3-12-2023',
+        day: '26-2-2023',
         events: [
             {
                 title: 'Intro to psychology',
@@ -55,7 +55,7 @@
         ]
     },
     {
-        day: '1-12-2023',
+        day: '25-2-2023',
         events: [
             {
                 title: 'Intro to deep learning',
