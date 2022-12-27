@@ -5,6 +5,7 @@
     background-size: auto 100vh;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    color: white;
 }
 
 .mediaInfo {
@@ -13,7 +14,7 @@
 }
 
 .color_section {
-    background-color: #121930;
+    background-color: #05181a;
     padding-bottom: 5rem;
 }
 
@@ -64,7 +65,7 @@ h1 {
     margin: 4vh 8vw;
     padding: 4vh 4vw;
     border-radius: 14px;
-    background-color: #f3effe;
+    background-color: transparent;
 }
 
 .Prizes {
@@ -108,4 +109,8 @@ h1 {
     .d-image {
         padding-right: 0;
     }
+}
+
+#faq, #prizes, #team {
+    padding-top: 150px;
 }

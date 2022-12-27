@@ -24,6 +24,7 @@
     animation-timing-function: steps(10);
     animation-iteration-count: infinite;
     pointer-events: none;
+    filter: invert(0.5);
 
     &--one {
         animation-duration: 1s;

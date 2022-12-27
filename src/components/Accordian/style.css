@@ -6,7 +6,10 @@
 }
 
 .panel {
-    background-color: #c8ccf4;
+    /* background-color: black; */
+    background-color: transparent;
+    border-color: #2bbd4f;
+    border-width: 3px;
     border-radius: 12px;
     margin-top: 10px;
 }
@@ -24,7 +27,7 @@
     font-family: inherit;
     transition: color 0.1s linear;
     cursor: pointer;
-    color: black;
+    color: rgb(255, 255, 255);
     height: fit-content;
 
 }
@@ -42,7 +45,7 @@
     width: 22px;
     height: 2px;
     margin-top: -2px;
-    background-color: #372717;
+    background-color: #ffffff;
 }
 
 .panel__label:before {
@@ -67,7 +70,7 @@
 .panel__content {
     margin: 5px 25px 25px;
     font-size: 17px;
-    color: #494948;
+    color: #e2e2e2;
     opacity: 0;
     transition: opacity 0.3s linear 0.18s;
 }
