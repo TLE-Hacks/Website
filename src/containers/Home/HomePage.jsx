@@ -135,16 +135,16 @@ export default function HomePage() {
                 {media && <Birds top="120vh" left="0vh" type=""/>}
 
                 {/* ********Team here ***** */}
-                <h1 id="team" style={{marginTop: "15vh"}}>Our Team</h1>
+                <h1 id="team" style={{marginTop: "15vh"}}><b>Our Team</b></h1>
                 {FOOTER.JOIN_TEAM.required}
                 {TeamInfo.map(TeamMembers)}
                 {/* ********Team ending here ***** */}
 
                 {/* ********Judges here ***** */}
 
-                <h1 id="team" style={{marginTop: "15vh"}}>Judges</h1>
+                {/* <h1 id="team" style={{marginTop: "15vh"}}>Judges</h1>
                 {FOOTER.JOIN_TEAM.required}
-                {JudgesInfo.map(TeamMembers)}
+                {JudgesInfo.map(TeamMembers)} */}
                 {/* ********Team ending here ***** */}
             </Container>
             <Footer/>

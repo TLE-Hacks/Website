@@ -36,8 +36,15 @@ button {
 
 .button-group {
     width: 100%;
-    overflow: auto;
     display: flex;
+}
+
+/* make button group vertical if media size is mobile */
+@media (max-width: 570px) {
+    .button-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 .register {

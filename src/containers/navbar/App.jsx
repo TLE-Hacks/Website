@@ -26,7 +26,7 @@ const Wrapper = styled.div`
         transition: top 1s;
         .nav-content {
             height: 35%;
-            background-color: rgba(50, 13, 136);
+            background-color: #09704e;
         }
     }
 `;

@@ -3,7 +3,7 @@ import {Btn} from '../Landing';
 import './sponsors.scss';
 
 function SponsorsHead() {
-    return <h1 className="shead">Sponsors & Partners</h1>;
+    return <h1 className="shead"><b>Sponsors & Partners</b></h1>;
 }
 
 function Sponsor(props) {

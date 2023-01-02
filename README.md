@@ -282,25 +282,25 @@ Change meta tags content in `/public/index.html`
   name="google-site-verification"
   content="bbrVrhB_49iICKc-JLwkQG6qCWAQABQpCJ_ghVXOi2E"
 />
-<meta property="og:title" content="Limbo Hacks 2023" />
+<meta property="og:title" content="TLE Hacks 2023" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@limbohacks" />
-<meta name="twitter:creator" content="@limbohacks" />
-<meta property="og:url" content="https://limbohacks.tech" />
+<meta name="twitter:site" content="@tlehacks" />
+<meta name="twitter:creator" content="@tlehacks" />
+<meta property="og:url" content="https://tlehacks.tech" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="851" />
 <meta property="og:image:height" content="315" />
-<meta property="og:image:alt" content="Limbo hacks" />
-<meta property="og:image" content="https://i.imgur.com/bxP3Jz1.png" />
-<meta
+<meta property="og:image:alt" content="TLE hacks" />
+<!-- <meta property="og:image" content="https://i.imgur.com/bxP3Jz1.png" /> -->
+<!-- <meta
   property="og:image:secure_url"
   content="https://i.imgur.com/bxP3Jz1.png"
-/>
-<meta name="twitter:image" content="https://i.imgur.com/bxP3Jz1.png" />
+/> -->
+<!-- <meta name="twitter:image" content="https://i.imgur.com/bxP3Jz1.png" /> -->
 <meta
   property="og:description"
-  content="Join us on 20th November 2023 with over 300 students from across the nation for 24 hours of creation, innovation & fun."
+  content="Join us on 24th February 2023 virtually from across the nation for 36 hours of creation, innovation, & fun."
 />
 ```
 

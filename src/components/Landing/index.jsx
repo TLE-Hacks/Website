@@ -37,7 +37,7 @@ const Myinfo = () => {
                         overlay="Discord"
                     />
                 </a>
-                <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+                <a target="_blank" href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
                     <Btn
                         class="register"
                         type="Register"

@@ -253,7 +253,7 @@ const TeamInfo = [
             img: me
         },
         {
-            name: 'Jack Zhang',
+            name: 'Jake Zhang',
             role: 'Co-Director',
             img: moon
         },
